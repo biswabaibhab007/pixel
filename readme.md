@@ -1,0 +1,10 @@
+- login and register page
+- /register
+- /login
+- /profile
+- /feed
+- /save/:pinid
+- /delete/:pinid
+- /logout
+- /edit
+- /upload

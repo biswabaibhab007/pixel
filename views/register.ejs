@@ -1,0 +1,29 @@
+<% include partials/header.ejs %>
+
+  <div
+    class="w-full h-screen bg-zinc-200 bg-center bg-cover flex items-center justify-center">
+    <div class="w-[30VW] bg-white rounded-[6vh] px-20 py-12">
+      <h1 class="tracking-tighter text-3xl text-center font-bold text-zinc-700">Create New Account</h1>
+      <form action="/register" method="post">
+        <!-- <label for="email">Email</label> -->
+        <input class="mt-8 block w-full px-3 py-2 rounded-xl border-2 border-zinc-300" type="text" name="username" placeholder="Username">
+        <input class="mt-2 block w-full px-3 py-2 rounded-xl border-2 border-zinc-300" type="text" name="fullname" placeholder="Full Name">
+          <input class="mt-2 block w-full px-3 py-2 rounded-xl border-2 border-zinc-300" type="email" name="email"
+          placeholder="Email">
+          <input class="mt-2 block w-full px-3 py-2 rounded-xl border-2 border-zinc-300" type="number" name="contact"
+          placeholder="Contact">
+        <!-- <label for="password">Password</label> -->
+        <input class="mt-2 block w-full px-3 py-2 rounded-xl border-2 border-zinc-300" type="password" name="password"
+          placeholder="Password">
+
+        <input type="submit" class="mt-8 block w-full px-3 py-2 rounded-md bg-teal-500 text-white mt-4" value="Continue">
+
+        <p class="text-xs text-center text-zinc-600 mt-8">By continuing, you agree to Pixel's Terms of Service.</p>
+      </form>
+
+      <a class="mt-4 flex justify-center text-zinc-700" href="/">Login with existing account</a>
+
+    </div>
+  </div>
+
+  <% include partials/footer.ejs %>
